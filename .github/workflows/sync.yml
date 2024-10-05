@@ -25,6 +25,7 @@ jobs:
     - name: Copy files
       run: |
         cp -R target-repo/* tvsrc
+        rm -rf target-repo
     
     # Step 4: 提交和推送更改
     - name: Commit and push changes
