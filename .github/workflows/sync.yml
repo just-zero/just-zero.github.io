@@ -14,7 +14,7 @@ jobs:
     steps:
     # Step 1: 检出当前仓库
     - name: Checkout this repository
-      uses: actions/checkout
+      uses: actions/checkout@v4
 
     # Step 2: 克隆目标仓库
     - name: Clone target repository
