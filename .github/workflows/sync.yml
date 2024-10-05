@@ -24,7 +24,7 @@ jobs:
     # Step 3: 复制需要同步的文件
     - name: Copy files
       run: |
-        cp -r target-repo/* /tvsrc
+        cp -r target-repo/* tvsrc
     
     # Step 4: 提交和推送更改
     - name: Commit and push changes
