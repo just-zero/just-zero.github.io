@@ -1,5 +1,4 @@
-name: Sync files from another repository
-
+name: Get TV Source
 on:
   schedule:
     # 每天的 19:00 UTC / CST 4:00 自动触发同步
@@ -26,6 +25,7 @@ jobs:
       run: |
         cp -R target-repo/* tvsrc
         rm -rf target-repo
+        curl https://live.zbds.top/tv/iptv6.m3u -o tvsrc/live.m3u
     
     # Step 4: 提交和推送更改
     - name: Commit and push changes
