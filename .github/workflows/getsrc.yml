@@ -25,7 +25,7 @@ jobs:
       run: |
         cp -R target-repo/* tvsrc
         rm -rf target-repo
-        curl https://live.zbds.top/tv/iptv6.m3u -o tvsrc/live.m3u
+        curl https://raw.githubusercontent.com/wwb521/live/refs/heads/main/tv.m3u -o tvsrc/live.m3u
     
     # Step 4: 提交和推送更改
     - name: Commit and push changes
